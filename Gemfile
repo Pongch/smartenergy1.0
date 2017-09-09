@@ -13,9 +13,19 @@ gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
+# jquery
+gem 'jquery-rails'
+# Jquery turbolinks so Jquery function works after page load
+gem 'jquery-turbolinks'
+#Boot strap Sass gem
+gem 'bootstrap-sass'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+
+gem "font-awesome-rails"
+gem 'underscore-rails'
+gem 'gmaps4rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
