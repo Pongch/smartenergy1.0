@@ -48,5 +48,29 @@
  }
 
  .container-fluid div.map{
-  background-color:blue;
+
  }
+
+ h1.map-name {
+   margin-bottom:2.5em;
+ }
+
+.mycheckbox{
+  margin-top:5px;
+  margin-left:5px;
+}
+
+.pull-left {
+  text-align: left;
+}
+
+label {
+display: inline-block;
+max-width: 100%;
+margin-bottom: 5px;
+font-weight: normal;
+}
+
+input.rightside{
+  margin-left:200px;
+}
