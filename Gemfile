@@ -26,6 +26,7 @@ gem 'uglifier', '>= 1.3.0'
 gem "font-awesome-rails"
 gem 'underscore-rails'
 gem 'gmaps4rails'
+gem 'materialize-sass'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

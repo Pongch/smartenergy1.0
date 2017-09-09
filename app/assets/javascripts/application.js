@@ -17,6 +17,8 @@
 //= require bootstrap-sprockets
 //= require underscore
 //= require gmaps/google
+//= require materialize-sprockets
+//= require materialize/extras/nouislider
 
 handler = Gmaps.build('Google');
 handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
@@ -34,4 +36,19 @@ handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
   ]);
   handler.bounds.extendWith(markers);
   handler.fitMapToBounds();
+});
+
+var slider = document.getElementById('test-slider');
+noUiSlider.create(slider, {
+ start: [20, 80],
+ connect: true,
+ step: 1,
+ orientation: 'horizontal', // 'horizontal' or 'vertical'
+ range: {
+   'min': 0,
+   'max': 100
+ },
+ format: wNumb({
+   decimals: 0
+ })
 });

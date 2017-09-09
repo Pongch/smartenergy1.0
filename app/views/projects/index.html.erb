@@ -1,63 +1,104 @@
 
-<h1 class="map-name">Indonesia</h1>
-<p><strong>Map Filter</strong></p>
-<div class="form-group mycheckboxdiv">
-    <span class="leftside">remember me</span> <input type="checkbox" data-ng-model="rememberMe" class="rightside">
+<div class="row">
+  <div class="col s3">
+
+    <h1 class="map-name">Indonesia</h1>
+    <strong>Map Filter</strong><i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
+    <p>Population Density</p>
+    <form action="#">
+        <p class="range-field">
+          <input type="range" class="filled-in" id="test5" min="0" max="2000" />
+        </p>
+        <span class="left-align">0</span>
+        <span class="rightside">2000</span>
+    </form>
+    <p>Income</p>
+    <form action="#">
+        <p class="range-field">
+          <input type="range" class="filled-in" id="test5" min="0" max="1000" />
+        </p>
+        <span class="left-align">$0</span>
+        <span class="rightside">$2000</span>
+    </form>
+    <p>Area Size</p>
+    <form action="#">
+        <p class="range-field">
+          <input type="range" class="filled-in" id="test5" min="0" max="1000" />
+        </p>
+        <span class="left-align">0 Km</span>
+        <span class="rightside">1000 Km</span>
+    </form>
+    <p>Distance from Grid</p>
+    <form action="#">
+        <p class="range-field">
+          <input type="range" class="filled-in" id="test5" min="0" max="1000" />
+        </p>
+        <span class="left-align">0 Km</span>
+        <span class="rightside">1000 Km</span>
+    </form>
+
+    <p>
+      <input type="checkbox" id="1" />
+      <label for="1">Solar Irradiance</label>
+    </p>
+    <p>
+      <input type="checkbox" id="2" />
+      <label for="2">Windflow</label>
+    </p>
+    <p>
+      <input type="checkbox" id="3" />
+      <label for="3">Rivers</label>
+    </p>
+    <p>
+      <input type="checkbox" id="4" />
+      <label for="4">Grid Lines/Substations</label>
+    </p>
+    <p>
+      <input type="checkbox" id="5" />
+      <label for="5">Roads</label>
+    </p>
+    <p>
+      <input type="checkbox" id="6" />
+      <label for="6">On-grid</label>
+    </p>
+    <p>
+      <input type="checkbox" id="7" />
+      <label for="7">Off-grid</label>
+    </p>
+
+    <!--
+    <p id="notice"><%= notice %></p>
+
+    <h1>Projects</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @projects.each do |project| %>
+          <tr>
+            <td><%= project.title %></td>
+            <td><%= project.description %></td>
+            <td><%= link_to 'Show', project %></td>
+            <td><%= link_to 'Edit', edit_project_path(project) %></td>
+            <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'New Project', new_project_path %>
+    -->
+  </div>
+  <div class="col s9">
+    <%=image_tag("Map-@2x.png", alt: "Example Image", class: "responsive-img")%>
+    </div>
 </div>
-<div class="form-group mycheckboxdiv">
-    <span class="leftside">remember me</span> <input type="checkbox" data-ng-model="rememberMe" class="rightside">
-</div>
-<div class="form-group mycheckboxdiv">
-    <span class="leftside">remember me</span> <input type="checkbox" data-ng-model="rememberMe" class="rightside">
-</div>
-<div class="form-group mycheckboxdiv">
-    <span class="leftside">remember me</span> <input type="checkbox" data-ng-model="rememberMe" class="rightside">
-</div>
-
-<p><strong>Map Filter</strong></p>
-<div class="form-group mycheckboxdiv">
-    <span class="leftside">remember me</span> <input type="checkbox" data-ng-model="rememberMe" class="rightside">
-</div>
-<div class="form-group mycheckboxdiv">
-    <span class="leftside">remember me</span> <input type="checkbox" data-ng-model="rememberMe" class="rightside">
-</div>
-<div class="form-group mycheckboxdiv">
-    <span class="leftside">remember me</span> <input type="checkbox" data-ng-model="rememberMe" class="rightside">
-</div>
-<div class="form-group mycheckboxdiv">
-    <span class="leftside">remember me</span> <input type="checkbox" data-ng-model="rememberMe" class="rightside">
-</div>
-
-
-
-<!--
-<p id="notice"><%= notice %></p>
-
-<h1>Projects</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @projects.each do |project| %>
-      <tr>
-        <td><%= project.title %></td>
-        <td><%= project.description %></td>
-        <td><%= link_to 'Show', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Project', new_project_path %>
--->

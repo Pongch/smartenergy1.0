@@ -16,10 +16,8 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
-
- body {
-   margin-top: 5em;
- }
+ @import "materialize/extras/nouislider";
+ @import "materialize";
 
  nav.navbar.navbar-default.navbar-fixed-top {
      background-color: white;
@@ -51,9 +49,9 @@
 
  }
 
- h1.map-name {
-   margin-bottom:2.5em;
- }
+span.value{
+  display:none!important;
+}
 
 .mycheckbox{
   margin-top:5px;
@@ -73,4 +71,30 @@ font-weight: normal;
 
 input.rightside{
   margin-left:200px;
+}
+
+nav {
+    color: #fff;
+    background-color: white;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+
+nav .nav-wrapper {
+    position: relative;
+    height: 100%;
+    color: black;
+}
+
+span.rightside {
+  float:right;
+}
+
+i.fa.fa-refresh.fa-2x{
+  float:right;
+}
+
+input[type="search"] {
+height: 64px !important; /* or height of nav */
 }
