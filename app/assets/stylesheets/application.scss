@@ -16,8 +16,47 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
- @import "materialize/extras/nouislider";
  @import "materialize";
+ @import "materialize/extras/nouislider";
+
+h1.hero{
+  margin-top:4em;
+}
+
+a.waves-effect.waves-light.btn-large {
+  margin-bottom:10em;
+}
+
+span.thumb.active{
+  display:none;
+}
+
+a.brand-logo,
+.fa.fa-refresh.fa-2x
+{
+  text-decoration: none;
+  color:black;
+}
+
+a.brand-logo img{
+  margin-left:2em;
+}
+
+i.fa.fa-sort-desc.fa-fw {
+  margin-left: -1em;
+  color: #8F8F90;
+}
+
+[type="checkbox"]+label:before,
+[type="checkbox"]:not(.filled-in)+label:after
+{
+left:275px;
+}
+
+[type="checkbox"]:checked+label:before
+{
+left:275px;
+}
 
  nav.navbar.navbar-default.navbar-fixed-top {
      background-color: white;
@@ -97,4 +136,48 @@ i.fa.fa-refresh.fa-2x{
 
 input[type="search"] {
 height: 64px !important; /* or height of nav */
+}
+
+#spinner {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #333;
+
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+  left: 50%;
+  top:40%;
+  position:absolute;
+  opacity:1;
+  transition:opacity 500ms;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+div.spun {
+  opacity: 0 ;
+}
+
+ul#nav-mobile li{
+  margin-left:1em;
+  margin-right:1em;
 }
